@@ -1,10 +1,97 @@
-<ion-view title="Home">
-  <ion-content class="has-header">
-    <!-- Display current location's weather data-->
-    <h3>{{city}}</h3>
-    <h5><weather-icon icon="current.icon" id="current-icon"></weather-icon> {{current.currently.summary}}</h5>
-    <p>The temperature now is</p>  
-  <span class="large">{{testvar}}</span>
-  <span class="large">{{message}} ° </span>
-  </ion-content>
-</ion-view>
+<div class="bar bar-header bar-positive">
+  <h1 class="title">Stylita</h1>
+</div>
+<div class="bar bar-subheader bar-energized">
+  <h1 class="title">Which shoe would you wear?</h1>
+</div>
+<!-- <div class="bar bar-subheader bar-energized" style="margin-bottom:400px;">
+  <h1 class="title">Which shoe would you wear?</h1>
+</div> -->
+
+<ion-content start-y="200">
+  <div class="row" style="margin-top:100px;">
+    <div class="col">
+      <div style="display:inline-blockblock" class="shoe-holder shoe-div1"></div>
+    </div>
+    <div class="col">
+      <div style="display:inline-blockblock" class="shoe-holder shoe-div2"></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div style="display:inline-blockblock" class="shoe-holder shoe-div3"></div>
+    </div>
+    <div class="col">
+      <div style="display:inline-block" class="shoe-holder shoe-div4"></div>
+    </div>
+  </div>
+ </ion-content>
+
+
+<script>
+  //increment likes
+  $('.shoe-holder').click(function() {
+    id = $(this).children('img').attr('id');
+    console.log('liked shoe ' + id);
+    $.ajax({
+      url: 'http://localhost:3000/api/shoes/'  + id +  '/inc_likes.json?',
+      type: 'GET',
+      dataType : 'jsonp',
+      error: function(ts) {
+       console.log(ts.responseStatus);
+       location.reload();  
+      },
+      success: function(data) {
+        if (data == "success") {
+          location.reload();  
+        }
+      }
+    });
+    incrementAllShows();
+  });
+
+  $('#like_button_test').click(function() {
+    $.ajax({
+      url: 'http://localhost:3000/api/shoes/1/inc_likes.json?',
+      type: 'GET',
+      dataType : 'jsonp',
+      success: function(data) {
+        if (data == "success") {
+        }
+      }
+    });
+  });
+
+  $('#add_button_test').click(function() {
+    $.ajax({
+      url: 'http://localhost:3000/api/shoes.json?',
+      type: 'POST',
+      dataType : 'jsonp',
+      data : {
+        'shoe_id' : 999,
+        },
+      success: function(data) {
+        if (data == "success") {
+        }
+      }
+    });
+  });
+
+//increment shows
+var incrementAllShows = function() {
+  $(".shoe-holder").each(function(){ 
+    id = $(this).children('img').attr('id');
+    console.log('shown '+id);
+    $.ajax({
+      url: "http://localhost:3000/api/shoes/" + id + "/inc_shows.json?",
+      type: 'GET',
+      dataType : 'jsonp',
+      success: function(data) {
+        if (data == "success") {
+        }
+      }
+    });
+  });
+}
+</script>

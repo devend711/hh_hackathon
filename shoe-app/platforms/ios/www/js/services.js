@@ -14,10 +14,13 @@ var forecastioWeather = ['$q', '$resource', '$http', 'FORECASTIO_KEY',
 
   return {
     //getAtLocation: function(lat, lng) {
-    getCurrentWeather: function(lat, lng) {
-      //return $http.jsonp(url + lat + ',' + lng + '?callback=JSON_CALLBACK');
-      //return $http.jsonp(url + '?callback=JSON_CALLBACK');
-      return '50';
+    // getCurrentWeather: function(lat, lng) {
+    //   //return $http.jsonp(url + lat + ',' + lng + '?callback=JSON_CALLBACK');
+    //   //return $http.jsonp(url + '?callback=JSON_CALLBACK');
+    //   //return '50';
+    // }
+    readInJson: function() {
+      return $.getJSON('style_casual.json');
     }
   }
 }];
@@ -65,5 +68,53 @@ factory('DataStore', function() {
     };
 
     return DataStore;
+}).
+factory('ShoeGetter', function() {
+  var ShoeInfo = {
+    data: $.getJSON('./stored_json/style_casual.json')
+  };
+
+  ShoeInfo.addAllPics = function() {
+    var get = function(){
+      $.getJSON('style_casual.json', function(data){
+        $.each(data, function(index, hash) {
+          //console.log(hash.image_link);
+          var img = $('<img class="shoe-pic" src=' + hash.image_link + '>');
+          img.appendTo('#imagediv');
+        });
+      });
+    }
+    return get();
+  }
+
+  ShoeInfo.NRandomShoes = function(n) {
+    var get = function(){
+      $.getJSON('style_casual.json', function(data){
+        var randoms = data.sort(function(){return Math.round(Math.random())-0.5});
+        var results = 0;
+        // for(var i=0; results<n; i++) {
+        //   var img = $('<img class="shoe-pic" src=' + randoms[i].image_link + '>');
+        //   img.load(function() {
+        //     console.log("image exists");
+        //     img.appendTo('#imagediv');
+        //     return false;
+        //     if (results > n) {
+        //       return false;
+        //     }
+        //   }).error(function () {
+        //      console.log("image doesn't exist");
+        //   });
+        // }
+
+        for(var i=0; i<n; i++) {
+          var img = $('<img class="shoe-img" src=' + randoms[i].image_link + ' id=' + randoms[i].id + '>');
+            img.appendTo('.shoe-div' + i);
+        }
+      });
+    }
+    return get();
+  }
+
+  return ShoeInfo;
 })
 .factory('Weather', forecastioWeather);

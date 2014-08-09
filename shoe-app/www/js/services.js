@@ -107,8 +107,8 @@ factory('ShoeGetter', function() {
         // }
 
         for(var i=0; i<n; i++) {
-          var img = $('<img class="shoe-pic" src=' + randoms[i].image_link + '>');
-            img.appendTo('#shoe' + i);
+          var img = $('<img class="shoe-img" src=' + randoms[i].image_link + ' id=' + randoms[i].id + '>');
+            img.appendTo('.shoe-div' + i);
         }
       });
     }

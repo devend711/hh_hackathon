@@ -11,14 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140809192925) do
+ActiveRecord::Schema.define(version: 20140809201955) do
 
   create_table "shoes", force: true do |t|
-    t.integer  "likes",      default: 0
-    t.integer  "shows",      default: 0
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "shoe_id"
+    t.integer "likes",   default: 0
+    t.integer "shows",   default: 0
+    t.integer "shoe_id"
   end
 
 end

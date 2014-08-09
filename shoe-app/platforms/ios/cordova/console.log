@@ -22,3 +22,98 @@
 2014-08-09 10:00:58.642 shoe-app[59337:80b] [CDVTimer][TotalPluginStartup] 1.829982ms
 2014-08-09 10:00:58.823 shoe-app[59337:80b] Resetting plugins due to page load.
 2014-08-09 10:00:59.059 shoe-app[59337:80b] Finished load of: file:///Users/ddayal/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/ECAB403D-15AD-45FC-9147-D9D99BEAA42F/shoe-app.app/www/index.html
+2014-08-09 16:30:33.728 shoe-app[70312:80b] Multi-tasking -> Device: YES, App: YES
+2014-08-09 16:30:33.760 shoe-app[70312:80b] Unlimited access to network resources
+2014-08-09 16:30:33.895 shoe-app[70312:80b] [CDVTimer][keyboard] 0.106990ms
+2014-08-09 16:30:33.896 shoe-app[70312:80b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-08-09 16:30:33.897 shoe-app[70312:80b] [CDVTimer][statusbar] 0.640988ms
+2014-08-09 16:30:33.897 shoe-app[70312:80b] [CDVTimer][TotalPluginStartup] 1.941979ms
+2014-08-09 16:30:34.107 shoe-app[70312:80b] Resetting plugins due to page load.
+2014-08-09 16:30:34.899 shoe-app[70312:80b] Finished load of: file:///Users/ddayal/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/ECAB403D-15AD-45FC-9147-D9D99BEAA42F/shoe-app.app/www/index.html#/tab/home
+2014-08-09 16:30:43.946 shoe-app[70312:80b] Resetting plugins due to page load.
+2014-08-09 16:30:44.190 shoe-app[70312:80b] Finished load of: file:///Users/ddayal/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/ECAB403D-15AD-45FC-9147-D9D99BEAA42F/shoe-app.app/www/index.html#/tab/home
+2014-08-09 16:34:25.431 shoe-app[70712:80b] Multi-tasking -> Device: YES, App: YES
+2014-08-09 16:34:25.438 shoe-app[70712:80b] Unlimited access to network resources
+2014-08-09 16:34:25.459 shoe-app[70712:80b] [CDVTimer][keyboard] 0.068963ms
+2014-08-09 16:34:25.460 shoe-app[70712:80b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-08-09 16:34:25.460 shoe-app[70712:80b] [CDVTimer][statusbar] 0.486970ms
+2014-08-09 16:34:25.461 shoe-app[70712:80b] [CDVTimer][TotalPluginStartup] 1.571953ms
+2014-08-09 16:34:25.500 shoe-app[70712:80b] Resetting plugins due to page load.
+2014-08-09 16:34:26.990 shoe-app[70712:80b] Finished load of: file:///Users/ddayal/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/ECAB403D-15AD-45FC-9147-D9D99BEAA42F/shoe-app.app/www/index.html#/tab/home
+2014-08-09 16:35:50.983 shoe-app[71100:80b] Multi-tasking -> Device: YES, App: YES
+2014-08-09 16:35:50.994 shoe-app[71100:80b] Unlimited access to network resources
+2014-08-09 16:35:51.021 shoe-app[71100:80b] [CDVTimer][keyboard] 0.106990ms
+2014-08-09 16:35:51.021 shoe-app[71100:80b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-08-09 16:35:51.022 shoe-app[71100:80b] [CDVTimer][statusbar] 0.874043ms
+2014-08-09 16:35:51.023 shoe-app[71100:80b] [CDVTimer][TotalPluginStartup] 2.539992ms
+2014-08-09 16:35:51.211 shoe-app[71100:80b] Resetting plugins due to page load.
+2014-08-09 16:35:52.523 shoe-app[71100:80b] Finished load of: file:///Users/ddayal/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/ECAB403D-15AD-45FC-9147-D9D99BEAA42F/shoe-app.app/www/index.html#/tab/home
+2014-08-09 16:35:54.590 shoe-app[71100:80b] liked shoe 6
+2014-08-09 16:35:54.590 shoe-app[71100:80b] shown 3
+2014-08-09 16:35:54.591 shoe-app[71100:80b] shown 8
+2014-08-09 16:35:54.591 shoe-app[71100:80b] shown 6
+2014-08-09 16:35:54.591 shoe-app[71100:80b] shown 5
+2014-08-09 16:35:54.615 shoe-app[71100:80b] Resetting plugins due to page load.
+2014-08-09 16:35:55.208 shoe-app[71100:80b] Finished load of: file:///Users/ddayal/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/ECAB403D-15AD-45FC-9147-D9D99BEAA42F/shoe-app.app/www/index.html#/tab/home
+2014-08-09 16:38:37.894 shoe-app[71468:80b] Multi-tasking -> Device: YES, App: YES
+2014-08-09 16:38:37.901 shoe-app[71468:80b] Unlimited access to network resources
+2014-08-09 16:38:37.920 shoe-app[71468:80b] [CDVTimer][keyboard] 0.077009ms
+2014-08-09 16:38:37.920 shoe-app[71468:80b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-08-09 16:38:37.921 shoe-app[71468:80b] [CDVTimer][statusbar] 0.445008ms
+2014-08-09 16:38:37.921 shoe-app[71468:80b] [CDVTimer][TotalPluginStartup] 1.502037ms
+2014-08-09 16:38:37.959 shoe-app[71468:80b] Resetting plugins due to page load.
+2014-08-09 16:38:39.158 shoe-app[71468:80b] Finished load of: file:///Users/ddayal/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/ECAB403D-15AD-45FC-9147-D9D99BEAA42F/shoe-app.app/www/index.html#/tab/home
+2014-08-09 16:41:12.552 shoe-app[71836:80b] Multi-tasking -> Device: YES, App: YES
+2014-08-09 16:41:12.559 shoe-app[71836:80b] Unlimited access to network resources
+2014-08-09 16:41:12.578 shoe-app[71836:80b] [CDVTimer][keyboard] 0.064015ms
+2014-08-09 16:41:12.579 shoe-app[71836:80b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-08-09 16:41:12.579 shoe-app[71836:80b] [CDVTimer][statusbar] 0.470996ms
+2014-08-09 16:41:12.580 shoe-app[71836:80b] [CDVTimer][TotalPluginStartup] 1.591980ms
+2014-08-09 16:41:12.621 shoe-app[71836:80b] Resetting plugins due to page load.
+2014-08-09 16:41:13.080 shoe-app[71836:80b] Finished load of: file:///Users/ddayal/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/ECAB403D-15AD-45FC-9147-D9D99BEAA42F/shoe-app.app/www/index.html#/tab/home
+Terminating in response to SpringBoard's termination.
+2014-08-09 16:41:25.940 shoe-app[72041:80b] Multi-tasking -> Device: YES, App: YES
+2014-08-09 16:41:25.952 shoe-app[72041:80b] Unlimited access to network resources
+2014-08-09 16:41:25.981 shoe-app[72041:80b] [CDVTimer][keyboard] 0.108004ms
+2014-08-09 16:41:25.982 shoe-app[72041:80b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-08-09 16:41:25.982 shoe-app[72041:80b] [CDVTimer][statusbar] 0.594974ms
+2014-08-09 16:41:25.983 shoe-app[72041:80b] [CDVTimer][TotalPluginStartup] 1.990020ms
+2014-08-09 16:41:26.151 shoe-app[72041:80b] Resetting plugins due to page load.
+2014-08-09 16:41:26.972 shoe-app[72041:80b] Finished load of: file:///Users/ddayal/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/ECAB403D-15AD-45FC-9147-D9D99BEAA42F/shoe-app.app/www/index.html#/tab/home
+Terminating in response to SpringBoard's termination.
+2014-08-09 16:48:04.161 shoe-app[72591:80b] Multi-tasking -> Device: YES, App: YES
+2014-08-09 16:48:04.172 shoe-app[72591:80b] Unlimited access to network resources
+2014-08-09 16:48:04.203 shoe-app[72591:80b] [CDVTimer][keyboard] 0.102043ms
+2014-08-09 16:48:04.204 shoe-app[72591:80b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-08-09 16:48:04.205 shoe-app[72591:80b] [CDVTimer][statusbar] 0.690997ms
+2014-08-09 16:48:04.206 shoe-app[72591:80b] [CDVTimer][TotalPluginStartup] 2.300024ms
+2014-08-09 16:48:04.379 shoe-app[72591:80b] Resetting plugins due to page load.
+2014-08-09 16:48:07.171 shoe-app[72591:80b] Finished load of: file:///Users/ddayal/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/ECAB403D-15AD-45FC-9147-D9D99BEAA42F/shoe-app.app/www/index.html#/tab/home
+2014-08-09 16:48:11.589 shoe-app[72591:80b] liked shoe 11
+2014-08-09 16:48:11.590 shoe-app[72591:80b] shown 11
+2014-08-09 16:48:11.590 shoe-app[72591:80b] shown 3
+2014-08-09 16:48:11.591 shoe-app[72591:80b] shown 10
+2014-08-09 16:48:11.591 shoe-app[72591:80b] shown 4
+2014-08-09 16:48:11.610 shoe-app[72591:80b] Resetting plugins due to page load.
+2014-08-09 16:48:11.904 shoe-app[72591:80b] Finished load of: file:///Users/ddayal/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/ECAB403D-15AD-45FC-9147-D9D99BEAA42F/shoe-app.app/www/index.html#/tab/home
+2014-08-09 16:48:13.106 shoe-app[72591:80b] liked shoe 8
+2014-08-09 16:48:13.106 shoe-app[72591:80b] shown 12
+2014-08-09 16:48:13.107 shoe-app[72591:80b] shown 1
+2014-08-09 16:48:13.107 shoe-app[72591:80b] shown 8
+2014-08-09 16:48:13.107 shoe-app[72591:80b] shown 6
+2014-08-09 16:48:13.123 shoe-app[72591:80b] Resetting plugins due to page load.
+2014-08-09 16:48:13.310 shoe-app[72591:80b] Finished load of: file:///Users/ddayal/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/ECAB403D-15AD-45FC-9147-D9D99BEAA42F/shoe-app.app/www/index.html#/tab/home
+2014-08-09 16:48:15.328 shoe-app[72591:80b] liked shoe 6
+2014-08-09 16:48:15.328 shoe-app[72591:80b] shown 10
+2014-08-09 16:48:15.329 shoe-app[72591:80b] shown 3
+2014-08-09 16:48:15.329 shoe-app[72591:80b] shown 6
+2014-08-09 16:48:15.329 shoe-app[72591:80b] shown 5
+2014-08-09 16:48:15.345 shoe-app[72591:80b] Resetting plugins due to page load.
+2014-08-09 16:48:15.591 shoe-app[72591:80b] Finished load of: file:///Users/ddayal/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/ECAB403D-15AD-45FC-9147-D9D99BEAA42F/shoe-app.app/www/index.html#/tab/home
+2014-08-09 16:48:16.643 shoe-app[72591:80b] liked shoe 1
+2014-08-09 16:48:16.643 shoe-app[72591:80b] shown 6
+2014-08-09 16:48:16.644 shoe-app[72591:80b] shown 2
+2014-08-09 16:48:16.644 shoe-app[72591:80b] shown 5
+2014-08-09 16:48:16.644 shoe-app[72591:80b] shown 1
+2014-08-09 16:48:16.659 shoe-app[72591:80b] Resetting plugins due to page load.
+2014-08-09 16:48:16.879 shoe-app[72591:80b] Finished load of: file:///Users/ddayal/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/ECAB403D-15AD-45FC-9147-D9D99BEAA42F/shoe-app.app/www/index.html#/tab/home

@@ -9,7 +9,7 @@ angular.module('starter.controllers', ['ionic'])
     var latitude  =  DataStore.latitude;
     var longitude = DataStore.longitude;
     //$scope.testjson = ShoeGetter.addAllPics();
-    $scope.testjson = ShoeGetter.NRandomShoes(4);
+    $scope.testjson = ShoeGetter.NRandomShoes(5);
 
     //call getCurrentWeather method in factory ‘Weather’
     // Weather.getCurrentWeather(latitude,longitude).then(function(resp) {
