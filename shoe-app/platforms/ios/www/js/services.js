@@ -50,10 +50,40 @@ var cities = [
 factory('DataStore', function() {
     //create datastore with default values
     var DataStore = {
-        city:       'Miami',
-        latitude:   25.7877,
-        longitude:  80.2241,
-        testvar: 'hi' };
+        numAnwered: 0,
+        numCorrect: 0 };
+
+    DataStore.correct = function(id) {  // if a user liked a shoe with this id, test if they were 'correct'
+      $.ajax({
+        url: 'http://localhost:3000/api/shoes/'  + id +  '.json?',
+        type: 'GET',
+        dataType : 'jsonp',
+        error: function(ts) {
+          alert('yay!');
+
+        },
+        success: function(data) {
+            alert('yay!');
+            return 'hi';
+        }
+      });
+    }
+
+    DataStore.correctness = function(id) {  // if a user liked a shoe with this id, test if they were 'correct'
+      $.ajax({
+        url: 'http://localhost:3000/api/shoes/'  + id +  '.json?',
+        type: 'GET',
+        dataType : 'jsonp',
+        error: function(ts) {
+
+        },
+        success: function(data) {
+          if (data == "success") {
+            alert('yay!');
+          }
+        }
+      });
+    }
 
     DataStore.setCity = function (value) {
        DataStore.city = value;
@@ -92,21 +122,8 @@ factory('ShoeGetter', function() {
       $.getJSON('style_casual.json', function(data){
         var randoms = data.sort(function(){return Math.round(Math.random())-0.5});
         var results = 0;
-        // for(var i=0; results<n; i++) {
-        //   var img = $('<img class="shoe-pic" src=' + randoms[i].image_link + '>');
-        //   img.load(function() {
-        //     console.log("image exists");
-        //     img.appendTo('#imagediv');
-        //     return false;
-        //     if (results > n) {
-        //       return false;
-        //     }
-        //   }).error(function () {
-        //      console.log("image doesn't exist");
-        //   });
-        // }
 
-        for(var i=0; i<n; i++) {
+        for(var i=0; i<=n; i++) {
           var img = $('<img class="shoe-img" src=' + randoms[i].image_link + ' id=' + randoms[i].id + '>');
             img.appendTo('.shoe-div' + i);
         }

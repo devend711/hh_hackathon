@@ -26,8 +26,9 @@
       <div style="display:inline-block" class="shoe-holder shoe-div4"></div>
     </div>
   </div>
- </ion-content>
 
+  <div class="row" id="correct"></div>
+ </ion-content>
 
 <script>
   //increment likes
@@ -38,17 +39,22 @@
       url: 'http://localhost:3000/api/shoes/'  + id +  '/inc_likes.json?',
       type: 'GET',
       dataType : 'jsonp',
-      error: function(ts) {
-       console.log(ts.responseStatus);
-       location.reload();  
+      error: function(data) {
+       console.log(data.responseStatus); 
+       if(data.likes>=data.shows/2) {
+        // $('#correct').append('<div id="alert">so fashionable!</div>').css("background-color","green");
+        // $('#alert').fadeOut('slow');
+       } else {
+
+       }
       },
       success: function(data) {
         if (data == "success") {
-          location.reload();  
         }
       }
     });
     incrementAllShows();
+    location.reload(); 
   });
 
   $('#like_button_test').click(function() {
@@ -63,20 +69,6 @@
     });
   });
 
-  $('#add_button_test').click(function() {
-    $.ajax({
-      url: 'http://localhost:3000/api/shoes.json?',
-      type: 'POST',
-      dataType : 'jsonp',
-      data : {
-        'shoe_id' : 999,
-        },
-      success: function(data) {
-        if (data == "success") {
-        }
-      }
-    });
-  });
 
 //increment shows
 var incrementAllShows = function() {
