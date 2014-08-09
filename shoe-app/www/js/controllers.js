@@ -1,6 +1,6 @@
 angular.module('starter.controllers', ['ionic'])
 .constant('FORECASTIO_KEY', 'NTNlNjJiOTAyMDA5MzQwMjAwMDAwMDIzZEk2RFhYY1E3WllTUGNocmVrWEdK')
-.controller('HomeCtrl', function($scope,$state,Weather,DataStore,ShoeInfo) {
+.controller('HomeCtrl', function($scope,$state,Weather,DataStore,ShoeGetter) {
     //read default settings into scope
     console.log('inside home');
     $scope.city  = DataStore.city;
@@ -8,7 +8,8 @@ angular.module('starter.controllers', ['ionic'])
       
     var latitude  =  DataStore.latitude;
     var longitude = DataStore.longitude;
-    $scope.testjson = ShoeInfo.getInfo();
+    //$scope.testjson = ShoeGetter.addAllPics();
+    $scope.testjson = ShoeGetter.NRandomShoes(4);
 
     //call getCurrentWeather method in factory ‘Weather’
     // Weather.getCurrentWeather(latitude,longitude).then(function(resp) {

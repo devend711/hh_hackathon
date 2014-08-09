@@ -69,26 +69,12 @@ factory('DataStore', function() {
 
     return DataStore;
 }).
-factory('ShoeInfo', function() {
+factory('ShoeGetter', function() {
   var ShoeInfo = {
     data: $.getJSON('./stored_json/style_casual.json')
   };
 
-
-  ShoeInfo.getInfo = function() {
-    // $.getJSON('style_casual.json', function(json) {
-    //     console.log(json);
-    //     return json.results;
-    // });
-    $.get('style_casual.json', function(text) {
-      JSON.parse(JSON.stringify(text), function(json) {
-        return JSON.read(json);
-      });
-    });
-  }
-
-  ShoeInfo.getInfo = function() {
-    //var get = function(){$.get('style_casual.json', null, onAjaxSuccess, "JSON");}
+  ShoeInfo.addAllPics = function() {
     var get = function(){
       $.getJSON('style_casual.json', function(data){
         $.each(data, function(index, hash) {
@@ -100,6 +86,20 @@ factory('ShoeInfo', function() {
     }
     return get();
   }
+
+  ShoeInfo.NRandomShoes = function(n) {
+    var get = function(){
+      $.getJSON('style_casual.json', function(data){
+        var randoms = data.sort(function(){return Math.round(Math.random())-0.5}).slice(0,n);
+        $.each(randoms, function(index, hash) {
+          var img = $('<img class="shoe-pic" src=' + hash.image_link + '>');
+          img.appendTo('#imagediv');
+        });
+      });
+    }
+    return get();
+  }
+
   return ShoeInfo;
 })
 .factory('Weather', forecastioWeather);
