@@ -14,6 +14,42 @@
      <div style="display:block" id="shoe4"></div>
 
 
+  <button id="like_button_test">like</button>
+  <button id="add_button_test">create</button>
+
+  <script>
+
+  $('#like_button_test').click(function() {
+    $.ajax({
+      url: 'http://localhost:3000/api/shoes/1/inc_likes.json?',
+      type: 'GET',
+      dataType : 'jsonp',
+      success: function(data) {
+        if (data == "success") {
+          alert('request sent!');
+        }
+      }
+    });
+  });
+
+  $('#add_button_test').click(function() {
+    $.ajax({
+      url: 'http://localhost:3000/api/shoes.json?',
+      type: 'POST',
+      dataType : 'jsonp',
+      data : {
+        'shoe_id' : 999,
+        },
+      success: function(data) {
+        if (data == "success") {
+          alert('request sent!');
+        }
+      }
+    });
+  });
+  </script>
+
+
   <div id="imagediv"></div>
   </ion-content>
 </ion-view>

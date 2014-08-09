@@ -20,6 +20,7 @@ module Api
 
     def create
       @shoe = Shoe.new(shoe_params)
+      @shoe.save
       render_if_saved(@shoe)
     end
 
