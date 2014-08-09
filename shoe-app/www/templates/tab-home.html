@@ -1,34 +1,19 @@
-<ion-view title="Stylita">
-<ion-content class="has-header">
-  <!-- Display current location's weather data-->
-  <!-- <h3>{{gender}}</h3> -->
-  <!-- <h5><weather-icon icon="current.icon" id="current-icon"></weather-icon> {{current.currently.summary}}</h5> -->
 
-  <span>{{style_description}}</span>
-  <p><b>Which of these four shoes will you wear?</b></p>
+<ion-view title="Home">
+  <ion-content class="has-header">
+    <!-- Display current location's weather data-->
+    <h3>{{city}}</h3>
+    <h5><weather-icon icon="current.icon" id="current-icon"></weather-icon> {{current.currently.summary}}</h5>
+    <p>The temperature now is</p>  
+  <span class="large">{{testjson}}</span>
+  <span class="large">{{message}} ° </span>
 
-  <div class="row">
-      <div class="col">
-          <img src="http://cdn.modwedding.com/wp-content/uploads/2013/08/Aruna-seth-wedding-shoes-feature-82113.jpg"
-               alt="Female Shoe" height="100" width="100">
-      </div>
-      <div class="col">
-          <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Sports_shoes.jpg/800px-Sports_shoes.jpg"
-               alt="Male Shoe" height="100" width="100">
-      </div>
-  </div>
+  <div style="display:block" id="shoe1"></div>
+   <div style="display:block" id="shoe2"></div>
+    <div style="display:block" id="shoe3"></div>
+     <div style="display:block" id="shoe4"></div>
 
-  <div class="row">
-      <div class="col">
-          <img src="http://cdn.modwedding.com/wp-content/uploads/2013/08/Aruna-seth-wedding-shoes-feature-82113.jpg"
-               alt="Female Shoe" height="100" width="100">
-      </div>
-      <div class="col">
-          <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Sports_shoes.jpg/800px-Sports_shoes.jpg"
-               alt="Male Shoe" height="100" width="100">
-      </div>
-  </div>
 
-  <!--  <span class="large">{{current.currently.temperature}} ° </span> -->
-</ion-content>
+  <div id="imagediv"></div>
+  </ion-content>
 </ion-view>

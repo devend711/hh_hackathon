@@ -1,16 +1,20 @@
 angular.module('starter.controllers', ['ionic'])
-.constant('FORECASTIO_KEY', 'cbd83f782f0c29cd4175bd08d562d8d3')
+.constant('FORECASTIO_KEY', 'NTNlNjJiOTAyMDA5MzQwMjAwMDAwMDIzZEk2RFhYY1E3WllTUGNocmVrWEdK')
 .controller('HomeCtrl', function($scope,$state,Weather,DataStore) {
     //read default settings into scope
     console.log('inside home');
     $scope.city  = DataStore.city;
+    $scope.testvar = DataStore.testvar;
+      
     var latitude  =  DataStore.latitude;
     var longitude = DataStore.longitude;
 
     //call getCurrentWeather method in factory ‘Weather’
     Weather.getCurrentWeather(latitude,longitude).then(function(resp) {
       $scope.current = resp.data;
+      console.log('log');
       console.log('GOT CURRENT', $scope.current);
+
       //debugger;
     }, function(error) {
       alert('Unable to get current conditions');

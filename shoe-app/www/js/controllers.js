@@ -1,21 +1,31 @@
 angular.module('starter.controllers', ['ionic'])
-.constant('FORECASTIO_KEY', 'cbd83f782f0c29cd4175bd08d562d8d3')
-.controller('HomeCtrl', function($scope,$state,Weather,DataStore) {
+.constant('FORECASTIO_KEY', 'NTNlNjJiOTAyMDA5MzQwMjAwMDAwMDIzZEk2RFhYY1E3WllTUGNocmVrWEdK')
+.controller('HomeCtrl', function($scope,$state,Weather,DataStore,ShoeGetter) {
     //read default settings into scope
     console.log('inside home');
     $scope.city  = DataStore.city;
+    $scope.testvar = DataStore.testvar;
+      
     var latitude  =  DataStore.latitude;
     var longitude = DataStore.longitude;
+    //$scope.testjson = ShoeGetter.addAllPics();
+    $scope.testjson = ShoeGetter.NRandomShoes(4);
 
     //call getCurrentWeather method in factory ‘Weather’
-    Weather.getCurrentWeather(latitude,longitude).then(function(resp) {
-      $scope.current = resp.data;
-      console.log('GOT CURRENT', $scope.current);
-      //debugger;
-    }, function(error) {
-      alert('Unable to get current conditions');
-      console.error(error);
-    });
+    // Weather.getCurrentWeather(latitude,longitude).then(function(resp) {
+    //   $scope.current = resp.data;
+    //   console.log('log');
+    //   console.log('GOT CURRENT', $scope.current);
+
+    //   //debugger;
+    // }, function(error) {
+    //   alert('Unable to get current conditions');
+    //   console.error(error);
+    // });
+
+	// Weather.readInJson().then(function(data) {
+	// 	console.log(data);
+	// }
 
 })
 .controller('LocationsCtrl', function($scope,$state, Cities,DataStore) {

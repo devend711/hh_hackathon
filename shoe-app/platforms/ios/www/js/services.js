@@ -2,7 +2,7 @@
 
 var forecastioWeather = ['$q', '$resource', '$http', 'FORECASTIO_KEY', 
   function($q, $resource, $http, FORECASTIO_KEY) {
-  var url = 'https://api.forecast.io/forecast/' + FORECASTIO_KEY + '/';
+  var url = 'https://www.apitite.net/api/hhbrown/bystyle/' + FORECASTIO_KEY + '/';
 
   var weatherResource = $resource(url, {
     callback: 'JSON_CALLBACK',
@@ -15,7 +15,9 @@ var forecastioWeather = ['$q', '$resource', '$http', 'FORECASTIO_KEY',
   return {
     //getAtLocation: function(lat, lng) {
     getCurrentWeather: function(lat, lng) {
-      return $http.jsonp(url + lat + ',' + lng + '?callback=JSON_CALLBACK');
+      //return $http.jsonp(url + lat + ',' + lng + '?callback=JSON_CALLBACK');
+      //return $http.jsonp(url + '?callback=JSON_CALLBACK');
+      return '50';
     }
   }
 }];
@@ -47,7 +49,8 @@ factory('DataStore', function() {
     var DataStore = {
         city:       'Miami',
         latitude:   25.7877,
-        longitude:  80.2241 };
+        longitude:  80.2241,
+        testvar: 'hi' };
 
     DataStore.setCity = function (value) {
        DataStore.city = value;
