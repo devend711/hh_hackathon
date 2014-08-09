@@ -1,19 +1,31 @@
 
 <ion-view title="Home">
-  <ion-content class="has-header">
-    <!-- Display current location's weather data-->
-    <h3>{{city}}</h3>
-    <h5><weather-icon icon="current.icon" id="current-icon"></weather-icon> {{current.currently.summary}}</h5>
-    <p>The temperature now is</p>  
-  <span class="large">{{testjson}}</span>
-  <span class="large">{{message}} ° </span>
+    <ion-content class="has-header">
+        <!-- Display current location's weather data-->
+        <h3>{{Stylita}}</h3>
+        <h5><weather-icon icon="current.icon" id="current-icon"></weather-icon> {{current.currently.summary}}</h5>
+        <p><b>Which of these four shoes will you wear?</b></p>
+        <span class="large">{{testjson}}</span>
+        <span class="large">{{message}} ° </span>
 
-  <div style="display:block" id="shoe1"></div>
-   <div style="display:block" id="shoe2"></div>
-    <div style="display:block" id="shoe3"></div>
-     <div style="display:block" id="shoe4"></div>
+        <div class="row row-top">
+            <div class="col">
+                <div style="display:block" id="shoe1"></div>
+            </div>
+            <div class="col">
+                <div style="display:block" id="shoe2"></div>
+            </div>
+        </div>
+        <div class="row row-bottom">
+            <div class="col">
+                <div style="display:block" id="shoe3"></div>
+            </div>
+            <div class="col">
+                <div style="display:block" id="shoe4"></div>
+            </div>
+        </div>
 
 
-  <div id="imagediv"></div>
-  </ion-content>
+        <div id="imagediv"></div>
+    </ion-content>
 </ion-view>
