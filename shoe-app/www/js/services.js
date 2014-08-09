@@ -90,11 +90,26 @@ factory('ShoeGetter', function() {
   ShoeInfo.NRandomShoes = function(n) {
     var get = function(){
       $.getJSON('style_casual.json', function(data){
-        var randoms = data.sort(function(){return Math.round(Math.random())-0.5}).slice(0,n);
-        $.each(randoms, function(index, hash) {
-          var img = $('<img class="shoe-pic" src=' + hash.image_link + '>');
-          img.appendTo('#imagediv');
-        });
+        var randoms = data.sort(function(){return Math.round(Math.random())-0.5});
+        var results = 0;
+        // for(var i=0; results<n; i++) {
+        //   var img = $('<img class="shoe-pic" src=' + randoms[i].image_link + '>');
+        //   img.load(function() {
+        //     console.log("image exists");
+        //     img.appendTo('#imagediv');
+        //     return false;
+        //     if (results > n) {
+        //       return false;
+        //     }
+        //   }).error(function () {
+        //      console.log("image doesn't exist");
+        //   });
+        // }
+
+        for(var i=0; i<n; i++) {
+          var img = $('<img class="shoe-pic" src=' + randoms[i].image_link + '>');
+            img.appendTo('#shoe' + i);
+        }
       });
     }
     return get();
